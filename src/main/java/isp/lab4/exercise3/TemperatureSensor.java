@@ -1,4 +1,4 @@
-package isp.lab4.exercise1;
+package isp.lab4.exercise3;
 
 public class TemperatureSensor {
     private int value;
@@ -10,7 +10,7 @@ public class TemperatureSensor {
     }
 
     public TemperatureSensor(int type, String location) {
-        value = type; // lets assume that was desired
+        this.value = type;
         this.location = location;
     }
 
@@ -20,6 +20,10 @@ public class TemperatureSensor {
 
     public String getLocation() {
         return location;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
     }
 
     @Override
